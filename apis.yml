@@ -1,23 +1,19 @@
 aid: microsoft-azure-file-storage
-url: 
-  https://raw.githubusercontent.com/api-evangelist/microsoft-azure-file-storage/refs/heads/main/apis.yml
+url: https://raw.githubusercontent.com/api-evangelist/microsoft-azure-file-storage/refs/heads/main/apis.yml
 apis:
   - aid: microsoft-azure-file-storage:rest-api
     name: Azure File Storage REST API
     tags:
-      - File Storage
-      - SMB
-      - NFS
-      - File Shares
       - Cloud Storage
-    image: 
-      https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+      - File Shares
+      - File Storage
+      - NFS
+      - SMB
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     baseURL: https://{account}.file.core.windows.net/
-    humanURL: 
-      https://learn.microsoft.com/en-us/rest/api/storageservices/file-service-rest-api
+    humanURL: https://learn.microsoft.com/en-us/rest/api/storageservices/file-service-rest-api
     properties:
-      - url: 
-          https://learn.microsoft.com/en-us/rest/api/storageservices/file-service-rest-api
+      - url: https://learn.microsoft.com/en-us/rest/api/storageservices/file-service-rest-api
         type: Documentation
     description: >-
       Azure File Storage REST API provides fully managed cloud file shares accessible
