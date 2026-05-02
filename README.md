@@ -3,14 +3,20 @@ Azure File Storage REST API provides fully managed cloud file shares accessible 
 
 **URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/microsoft-azure-file-storage/refs/heads/main/apis.yml)
 
+## Scope
+
+- **Type:** Index
+- **Position:** Consuming
+- **Access:** 3rd-Party
+
 ## Tags:
 
- - File Storage, SMB, NFS, File Shares, Cloud Storage
+ - Cloud Storage, File Shares, File Storage, NFS, SMB
 
 ## Timestamps
 
 - **Created:** 2026-03-13
-- **Modified:** 2026-03-13
+- **Modified:** 2026-04-28
 
 ## APIs
 
