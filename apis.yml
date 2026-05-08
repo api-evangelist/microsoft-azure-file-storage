@@ -30,6 +30,8 @@ apis:
     baseURL: https://{account}.file.core.windows.net/
     humanURL: https://learn.microsoft.com/en-us/rest/api/storageservices/file-service-rest-api
     properties:
+      - url: openapi/microsoft-azure-file-storage-openapi.yml
+        type: OpenAPI
       - url: https://learn.microsoft.com/en-us/rest/api/storageservices/file-service-rest-api
         type: Documentation
     description: >-
