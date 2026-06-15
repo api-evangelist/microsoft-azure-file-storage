@@ -1,8 +1,9 @@
 aid: microsoft-azure-file-storage
 name: Azure File Storage
-description: The Azure Files FileREST protocol enables software vendors and regular Azure users to efficiently write applications
-  and services that communicate with Azure file shares. It provides fully managed cloud file shares accessible via SMB and
-  NFS protocols, with support for snapshots and Azure File Sync.
+description: >-
+  The Azure Files FileREST protocol enables software vendors and regular Azure users to efficiently write applications
+  and services that communicate with Azure file shares. It provides fully managed cloud file shares accessible via SMB
+  and NFS protocols, with support for snapshots and Azure File Sync.
 type: Index
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
@@ -19,24 +20,23 @@ apis:
   - aid: microsoft-azure-file-storage:rest-api
     name: Azure File Storage REST API
     tags:
-    - Cloud Storage
-    - File Shares
-    - File Storage
-    - NFS
-    - SMB
+      - Cloud Storage
+      - File Shares
+      - File Storage
+      - NFS
+      - SMB
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     baseURL: https://{account}.file.core.windows.net/
     humanURL: https://learn.microsoft.com/en-us/rest/api/storageservices/file-service-rest-api
     properties:
-    - url: openapi/microsoft-azure-file-storage-openapi.yml
-      type: OpenAPI
-    - url: https://learn.microsoft.com/en-us/rest/api/storageservices/file-service-rest-api
-      type: Documentation
-    - type: NaftikoCapability
-      url: capabilities/microsoft-azure-file-storage-shares.yaml
-    description: Azure File Storage REST API provides fully managed cloud file shares accessible via SMB and NFS protocols.
-      It supports creating file shares, managing directories and files, configuring snapshots, and setting up Azure File Sync
-      for hybrid cloud file storage.
+      - url: openapi/microsoft-azure-file-storage-openapi.yml
+        type: OpenAPI
+      - url: https://learn.microsoft.com/en-us/rest/api/storageservices/file-service-rest-api
+        type: Documentation
+    description: >-
+      Azure File Storage REST API provides fully managed cloud file shares accessible via SMB and NFS protocols. It
+      supports creating file shares, managing directories and files, configuring snapshots, and setting up Azure File
+      Sync for hybrid cloud file storage.
 common:
   - type: GitHubOrganization
     url: https://github.com/Azure
