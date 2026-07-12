@@ -38,6 +38,10 @@ apis:
       supports creating file shares, managing directories and files, configuring snapshots, and setting up Azure File
       Sync for hybrid cloud file storage.
 common:
+  - type: DomainSecurity
+    url: security/microsoft-azure-file-storage-domain-security.yml
+  - type: Authentication
+    url: authentication/microsoft-azure-file-storage-authentication.yml
   - type: GitHubOrganization
     url: https://github.com/Azure
   - type: Portal
@@ -53,3 +57,5 @@ common:
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+  - url: https://azure.microsoft.com/en-us/blog/azure-files-enhances-data-protection-capabilities/
+    type: Blog
