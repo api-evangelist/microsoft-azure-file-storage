@@ -38,6 +38,8 @@ apis:
       supports creating file shares, managing directories and files, configuring snapshots, and setting up Azure File
       Sync for hybrid cloud file storage.
 common:
+  - type: AgenticAccess
+    url: agentic-access/microsoft-azure-file-storage-agentic-access.yml
   - type: DomainSecurity
     url: security/microsoft-azure-file-storage-domain-security.yml
   - type: Authentication
