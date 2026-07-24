@@ -1,26 +1,20 @@
 openapi: 3.1.0
 info:
-  title: Azure File Storage REST API
-  description: Azure File Storage REST API enables clients to manage shares, directories, and files within
-    a storage account using SMB-like operations over HTTP.
+  title: Azure File Storage REST Shares API
+  description: Azure File Storage REST API enables clients to manage shares, directories, and files within a storage account using SMB-like operations over HTTP.
   version: '2024-05-04'
-externalDocs:
-  description: Azure File Storage REST API Documentation
-  url: https://learn.microsoft.com/en-us/rest/api/storageservices/file-service-rest-api
 servers:
 - url: https://{account}.file.core.windows.net
   variables:
     account:
       default: myaccount
       description: Storage account name
-tags:
-- name: Service
-  description: Account-level operations
-- name: Shares
-  description: Shares operations
 security:
 - sharedKey: []
 - sasToken: []
+tags:
+- name: Shares
+  description: Shares operations
 paths:
   /:
     get:
@@ -135,5 +129,8 @@ components:
       in: query
       name: sig
       description: Shared Access Signature token
+externalDocs:
+  description: Azure File Storage REST API Documentation
+  url: https://learn.microsoft.com/en-us/rest/api/storageservices/file-service-rest-api
 x-generated-from: https://learn.microsoft.com/en-us/rest/api/storageservices/file-service-rest-api
 x-generated-by: claude-crawl-2026-05-08
