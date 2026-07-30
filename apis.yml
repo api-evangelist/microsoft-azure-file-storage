@@ -5,7 +5,20 @@ description: >-
   and services that communicate with Azure file shares. It provides fully managed cloud file shares accessible via SMB
   and NFS protocols, with support for snapshots and Azure File Sync.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/microsoft-azure-file-storage.png
 tags:
   - Cloud Storage
   - File Shares
@@ -17,26 +30,18 @@ created: '2026-03-13'
 modified: '2026-05-19'
 specificationVersion: '0.19'
 apis:
-  - aid: microsoft-azure-file-storage:rest-api
-    name: Azure File Storage REST API
-    tags:
-      - Cloud Storage
-      - File Shares
-      - File Storage
-      - NFS
-      - SMB
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    baseURL: https://{account}.file.core.windows.net/
-    humanURL: https://learn.microsoft.com/en-us/rest/api/storageservices/file-service-rest-api
-    properties:
-      - url: openapi/microsoft-azure-file-storage-openapi.yml
-        type: OpenAPI
-      - url: https://learn.microsoft.com/en-us/rest/api/storageservices/file-service-rest-api
-        type: Documentation
-    description: >-
-      Azure File Storage REST API provides fully managed cloud file shares accessible via SMB and NFS protocols. It
-      supports creating file shares, managing directories and files, configuring snapshots, and setting up Azure File
-      Sync for hybrid cloud file storage.
+- aid: microsoft-azure-file-storage:microsoft-azure-file-storage-shares-api
+  name: Azure File Storage Shares API
+  description: Shares operations
+  humanURL: https://learn.microsoft.com/en-us/rest/api/storageservices/file-service-rest-api
+  baseURL: https://{account}.file.core.windows.net/
+  tags:
+  - Shares
+  properties:
+  - type: OpenAPI
+    url: openapi/microsoft-azure-file-storage-shares-api-openapi.yml
+  - type: Documentation
+    url: https://learn.microsoft.com/en-us/rest/api/storageservices/file-service-rest-api
 common:
   - type: AgenticAccess
     url: agentic-access/microsoft-azure-file-storage-agentic-access.yml
