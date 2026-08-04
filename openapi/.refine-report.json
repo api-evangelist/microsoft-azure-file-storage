@@ -1,0 +1,14 @@
+{
+  "provider": "microsoft-azure-file-storage",
+  "sources": [
+    "microsoft-azure-file-storage-shares-api-openapi.yml"
+  ],
+  "outputs": [
+    "microsoft-azure-file-storage-shares-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
