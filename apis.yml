@@ -5,6 +5,18 @@ description: >-
   and services that communicate with Azure file shares. It provides fully managed cloud file shares accessible via SMB
   and NFS protocols, with support for snapshots and Azure File Sync.
 type: Index
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: self-serve
